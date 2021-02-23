@@ -1,0 +1,46 @@
+Shiny Application and Reproducible Pitch
+========================================================
+author: César Carrera
+date: 02/23/2021
+autosize: true
+
+Introduction
+========================================================
+
+- The following Shiny Application was built for the course: **Developing Data Products** as part of the Coursera Data Science Specialization.
+- The shiny app developed for this assignment is avalilable in the following link: https://m/
+- The source code of ui.R and server.R are available on the my GitHub repository: https://githu
+
+Description of the application
+========================================================
+
+- The application is a **Sample Size Calculator**.
+- You can use it to estimate a sample size for a given population and other parameters, such as margin of error, confidence level, response distribution and expected non response rate.
+- It uses the standard formulas for estimation of sample size for proportions, as shown in the next slide.
+- The application is based on the sample size calculator of Raosoft (http://www.raosoft.com/samplesize.html). The application adds an expected non response rate and a plot to find margin of errors for a given sample size.
+
+Formulas
+========================================================
+
+The formulas used in this application are the following:
+
+$$
+\begin{aligned}
+ x & = Z_{(c/100)}^{2}r(100-r) \\
+ n & = N\frac{x}{(N-1)E^2 + x} \\
+ E & = \sqrt{\frac{(N - n)x}{n(N-1)}}
+\end{aligned}
+$$
+
+Where: $N$ is the population size, $r$ is the fraction of responses that you are interested in, and $Z(c/100)$ is the critical value for the confidence level $c$.
+
+Future improvements
+========================================================
+
+- Better user interface.
+- Add Power Analysis.
+- Allow for more complex sample designs, such as stratified and clusters.
+
+
+
+
